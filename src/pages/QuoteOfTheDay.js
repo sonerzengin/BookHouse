@@ -39,7 +39,7 @@ function GununSozu() {
     <Header />
     <div className='quoteOfTheDay'>
     <Card >
-      <Card.Header>Quote Of The Day</Card.Header>
+      <Card.Header>Günün Sözü</Card.Header>
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p className="blockquote__text">

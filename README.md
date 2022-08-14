@@ -11,6 +11,34 @@ Kodluyoruz FrontEnd Bootcamp'i final projesi
 * Formik
 * Axios
 
+## Screenshots
+
+# Homepage
+![plot](./proje-gorselleri/proje1.jpg)
+
+# Searching Books
+![plot](./proje-gorselleri/proje2.jpg)
+
+# Quote Of The Day
+It comes a new Quote for every rendered component
+![plot](./proje-gorselleri/proje3.jpg)
+
+# SignUp Page
+
+![plot](./proje-gorselleri/proje4.jpg)
+
+# Book Details
+![plot](./proje-gorselleri/proje5.jpg)
+
+# Required Zones
+![plot](./proje-gorselleri/proje6.jpg)
+
+# Books on Hover
+![plot](./proje-gorselleri/proje7.jpg)
+
+# Register Alert
+![plot](./proje-gorselleri/proje8.jpg)
+
 
 ## Getting Started with Create React App
 
