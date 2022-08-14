@@ -3,16 +3,20 @@ import { Formik } from "formik";
 import { Button} from "@chakra-ui/react";
 import { useNavigate } from 'react-router-dom';
 import Header from './Header';
+import { useState } from "react";
 
 function Login() {
+  
     
   
+
   let navigate = useNavigate(); 
   const routeChange = () =>{ 
     let path = `/`; 
     navigate(path);
   }
        
+
 
 
   return (
@@ -31,6 +35,7 @@ function Login() {
           }
           return errors;
         }}
+
         
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
@@ -42,6 +47,8 @@ function Login() {
              {
                 alert('Giriş Başarılı')
                 routeChange();
+                
+
                 
              } else {
               alert ('Hatalı E-posta ya da şifre.Yeniden Deneyin')

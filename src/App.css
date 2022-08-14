@@ -20,9 +20,22 @@
 .header__links:hover{
   font-size: 19px;
   color: teal;
+  text-decoration: none;
 }
 .signup{
   background-color: teal;
+}
+
+.linkkk {
+  background-color: teal;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: #fff;
+}
+.links{
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .formEleman {
@@ -92,7 +105,7 @@ text-align: center;
 }
 .basket-icon{
   padding-top: 2px ;
-  margin-left: 5px;
+
   margin-top: -3px;
 }
 .cards__main {

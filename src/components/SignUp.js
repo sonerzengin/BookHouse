@@ -1,17 +1,17 @@
-import React, { useEffect ,useState } from "react";
+import React from "react";
 import { Formik } from "formik";
-import { Button,  } from "@chakra-ui/react";
-import { API }  from "../API";
-import Home from "../pages/Home";
+import { Button } from "@chakra-ui/react";
 import { Link } from "react-router-dom"
-
+import useNavigate from 'react-router-dom';
 
 
 
 const SignUp = () => (
 
 
-
+  
+  
+ 
    
 
 
@@ -41,11 +41,11 @@ const SignUp = () => (
             localStorage.setItem('password', values.password);
             setSubmitting(false);
           }, 400);
-          
+          alert('Kayıt Başarılı')
         }}
         
       >
-      
+  
         {({
           values,
           errors,
@@ -102,9 +102,13 @@ const SignUp = () => (
             
             <br/><br/>
      
-            <Link to="/login" className="btn btn-secondary">Kayit Ol</Link>
-            
-
+            <Button  colorScheme='teal' type="submit" disabled={isSubmitting}>
+              Üye Ol
+            </Button>
+            <div className="links">
+            <Link className="linkkk" to="/">Geri Dön</Link>
+            <Link className="linkkk" to="/login">Giriş Yap</Link>
+            </div>
           </form>
         )}
       </Formik>

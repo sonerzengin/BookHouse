@@ -1,14 +1,16 @@
 import React from 'react'
 import '../App.css' ;
-import { useNavigate, useParams } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Flex, Spacer,Button,ButtonGroup,Box,Image, } from '@chakra-ui/react'
 import {BsBasket} from 'react-icons/bs'
 import { Link } from 'react-router-dom';
 import Top from './Top';
-import Login from './Login';
+
+
 
 function Header( ) {
 
+  
   let navigate = useNavigate(); 
   const routeChange = () =>{ 
     let path = `/SignUp`; 
@@ -16,6 +18,10 @@ function Header( ) {
   }
   const routeChange2 = () =>{ 
     let path = `../basket`; 
+    navigate(path);
+  }
+  const routeChange3 = () =>{ 
+    let path = `/login`; 
     navigate(path);
   }
 
@@ -36,21 +42,16 @@ function Header( ) {
           
           <Box gap={'3'} >
           <Spacer />
-            <Link className='header__links'  to={`/gununsozu`}>Günün Alıntısı</Link>
+            <Link className='header__links'  to={`/gununsozu`}>Kitaplardan Alıntılar</Link>
           </Box>
           <Spacer />
         <ButtonGroup gap='2'>
-          
-
-         {
-         <Button colorScheme='teal' onClick={routeChange}>Üye Ol / Giriş Yap</Button> 
-         }
-          { 
-
-              <Button colorScheme='teal'>Cikis Yap</Button> 
-          } 
+        <Button colorScheme='teal' onClick={routeChange}>Üye Ol</Button> 
+         
+        <Button colorScheme='teal' onClick={routeChange3}>Giriş Yap</Button> 
+           
         
-        <Button colorScheme='teal' onClick={routeChange2}>Sepetim <BsBasket className='basket-icon'/> </Button> 
+        <Button colorScheme='teal' onClick={routeChange2}><BsBasket className='basket-icon'/></Button> 
         </ButtonGroup>
       </Flex>
 

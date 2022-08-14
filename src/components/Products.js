@@ -21,7 +21,7 @@ function Products() {
         {
             data.map ((item,key) => (
                 <Box boxShadow='base' transition='all 0.5s ease' borderRadius={5} _hover={{textColor: 'teal',boxShadow:'dark-lg'}} >
-                <Cards key={key} item={item} />
+                <Cards key={key} item={item} />  
                 
                 </Box>
                 
