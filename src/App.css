@@ -1,0 +1,233 @@
+.info-top{
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgb(144, 144, 144);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px ;
+  color:#fff
+  
+}
+.info-top p:first-child{
+  margin-right: 30px;
+}
+.header__links{
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.5s ease-in-out;
+  
+  margin-left: 40px !important;
+}
+.header__links:hover{
+  font-size: 19px;
+  color: teal;
+}
+
+
+.formEleman {
+  font-size: 18px;
+  font-weight: 500;
+  
+}
+
+
+.login-page {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+border-radius: 10px;
+padding: 65px 10px;
+text-align: center;
+}
+
+.login-page h2{
+    padding-bottom: 10px;
+    font-weight: 600;
+    font-size: 22px;
+}
+.login-page input {
+    padding: 5px;
+    border-radius: 5px;
+    min-width: 250px;
+}
+.errors{
+  font-weight: 600;
+  padding: 5px;
+  color: red;
+}
+.newlogin{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 65px 10px;
+  text-align: center;
+}
+.newlogin input {
+  padding: 5px;
+  border-radius: 5px;
+  min-width: 250px;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.sliderPart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.header div img {
+  width: 75px;
+  
+  
+}
+.basket-icon{
+  padding-top: 2px ;
+  margin-left: 5px;
+  margin-top: -3px;
+}
+.cards__main {
+ 
+  margin-top: 20px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+.cards{
+  width: 100% ;
+}
+.routerLink:hover {
+  text-decoration: none;
+  color:teal;
+}
+
+.cardimage{
+  height: 300px;
+  
+  
+}
+.cardtitle{
+    font-weight: 800 !important;
+    transition: all 0.5s ease;
+
+}
+
+.cardbody {
+  height: 180px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.inputSearch{
+  display: flex;
+  justify-content: center;
+}
+.none{
+  display: none;
+}
+
+.urun-detay {
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+}
+.productDetails{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.productDetails__main{
+  border:3px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 75px !important;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  margin-bottom: 50px;
+}
+.productDetails__productImage{
+  border-radius: 4px;
+  
+}
+.productDetails__productTitle{
+  font-size: 26px;
+  float: left;
+  font-weight: 700;
+
+}
+.productDetails__productAuthor{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.productDetails__productPrice{
+  
+  font-weight: 600;
+  font-size: 26px;
+  
+}
+.productDetails__group2 {
+  display: flex;
+  justify-content:space-between ;
+}
+.productDetails__productDescription{
+  font-size: 13px;
+  padding: 20px 5px;
+}
+.gununsozu {
+  
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.logo__footer{
+  width: 40%;
+  float: left;
+}
+.quoteOfTheDay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 100px 250px !important;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.blockquote__text {
+  padding-bottom: 18px !important;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 600;
+}
+.blockquote__footer {
+  justify-self:end !important;
+  font-weight: 500;
+} 
+.link__button {
+  padding: 8px 10px 0 10px;
+  background-color: teal;
+  border-radius: 5px;
+  color: aliceblue;
+  transition: all 0.5s ease;
+
+}
+.search__results:hover .link__button{
+  color: antiquewhite;
+  padding: 7px 30px 0 30px;
+  
+}
