@@ -4,12 +4,12 @@ Kodluyoruz FrontEnd Bootcamp'i final projesi
 
 ## Used Technologies
 
-[x] React Query
-[x] React Bootstrap
-[x] Chakra UI
-[x] React Router Dom
-[x] Formik
-[x] Axios
+* React Query
+* React Bootstrap
+* Chakra UI
+* React Router Dom
+* Formik
+* Axios
 
 
 ## Getting Started with Create React App
