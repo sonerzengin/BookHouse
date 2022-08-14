@@ -31,13 +31,13 @@ function SearchInput( ) {
    return (
     <div >
       <div className='inputSearch'>
-      <Input placeholder='Kitap adı giriniz...' htmlSize={4} width='40%' onChange={handleChange} variant='filled' mb={5}/>
+      <Input placeholder='Kitap adı giriniz...' border='1px' htmlSize={4} width='40%' onChange={handleChange} variant='filled' mb={5}/>
       </div>
       {query.length > 0 && data.filter(name => name.BookTitle.toLowerCase().includes(query)).map((filteredName,key) => ( 
         <div key={key}> 
          <Box>
   
-  <Flex className='search__results' border='2px' borderColor='gray.200' justifyContent={'space-between'}>
+  <Flex className='search__results' fontSize={{sm:12,md:17}} border='2px' borderColor='gray.200' justifyContent={'space-between'}>
     <Box pt={2}  w='300px' h='10'>{filteredName.BookTitle}</Box>
     
     <Box pt={2} w='300px' h='10'>{filteredName.Author}</Box>

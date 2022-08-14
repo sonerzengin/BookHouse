@@ -16,7 +16,7 @@ function Products() {
 
   return (
       
-      <div className='cards__main '>
+      <div className='cards__main'>
         <Grid templateColumns={{md:'repeat(4, 1fr)',sm:'repeat(1, 1fr)'}} gap={3}>
         {
             data.map ((item,key) => (

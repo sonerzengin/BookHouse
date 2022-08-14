@@ -32,6 +32,12 @@
   border-radius: 5px;
   color: #fff;
 }
+.linkkk:hover {
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(5, 162, 162);
+}
+
 .links{
   margin-top: 10px;
   display: flex;
@@ -110,7 +116,7 @@ text-align: center;
 }
 .cards__main {
  
-  margin-top: 20px;
+  margin-top: 30px;
   padding-bottom: 50px;
   overflow: hidden;
   cursor: pointer;
@@ -155,6 +161,7 @@ text-align: center;
 .inputSearch{
   display: flex;
   justify-content: center;
+  
 }
 .none{
   display: none;
