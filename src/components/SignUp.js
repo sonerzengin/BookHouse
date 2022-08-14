@@ -1,16 +1,17 @@
 import React, { useEffect ,useState } from "react";
 import { Formik } from "formik";
-import { Button,Link  } from "@chakra-ui/react";
+import { Button,  } from "@chakra-ui/react";
 import { API }  from "../API";
 import Home from "../pages/Home";
-import { Link as ReachLink } from "react-router-dom"
+import { Link } from "react-router-dom"
+
 
 
 
 const SignUp = () => (
 
- 
- 
+
+
    
 
 
@@ -21,7 +22,7 @@ const SignUp = () => (
         initialValues={{username: '',email: '', password: ''}}
         validate={values => {
           const errors = {};
-          if (!values.email || !values.password) {
+          if (!values.email ) {
             errors.email = 'E-mail kısmı boş bırakılamaz';
             errors.password = 'Şifre boş bırakılamaz'
           } else if (
@@ -100,16 +101,14 @@ const SignUp = () => (
             
             
             <br/><br/>
-          
-            <Button  colorScheme='teal' type="submit" disabled={isSubmitting}>
-              Üye Ol
-            </Button>
+     
+            <Link to="/login" className="btn btn-secondary">Kayit Ol</Link>
             
 
           </form>
         )}
       </Formik>
     </div>
-  );
+);
   
   export default SignUp;

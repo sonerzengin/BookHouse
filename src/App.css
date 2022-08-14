@@ -21,7 +21,9 @@
   font-size: 19px;
   color: teal;
 }
-
+.signup{
+  background-color: teal;
+}
 
 .formEleman {
   font-size: 18px;
@@ -104,6 +106,8 @@ text-align: center;
 }
 .cards{
   width: 100% ;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
 }
 .routerLink:hover {
   text-decoration: none;
@@ -112,8 +116,13 @@ text-align: center;
 
 .cardimage{
   height: 320px;
+  transition: all 0.5s ease-in-out;
   
   
+  
+}
+.cards:hover .cardimage {
+  transform: scale(1.05,1.05);
   
 }
 .cardtitle{

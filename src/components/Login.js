@@ -34,7 +34,7 @@ function Login() {
         
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
-            let isLoggedIn = false;
+            
             var x = localStorage.getItem('email');
             var y = localStorage.getItem('password');
 
@@ -42,11 +42,7 @@ function Login() {
              {
                 alert('Giriş Başarılı')
                 routeChange();
-                isLoggedIn = true;
-              <div className='none'>
-                <Header isLoggedIn={isLoggedIn} username={localStorage.getItem('username')} />
-              </div>
-
+                
              } else {
               alert ('Hatalı E-posta ya da şifre.Yeniden Deneyin')
              }
@@ -58,7 +54,7 @@ function Login() {
         }}
         
       >
-        
+              
       
         {({
           values,
@@ -72,7 +68,7 @@ function Login() {
           
         }) => (
           <form onSubmit={handleSubmit}>
-
+              
                     
             <div className="formEleman">E-posta Adresiniz</div>
             <div className="errors">{errors.email && touched.email && errors.email}</div> 
@@ -103,6 +99,8 @@ function Login() {
             <Button colorScheme='teal' type="submit" disabled={isSubmitting}>
               Giriş Yap
             </Button>
+
+             
             
 
           </form>

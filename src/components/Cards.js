@@ -1,11 +1,7 @@
-
-
 import Card from 'react-bootstrap/Card';
-import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Button } from '@chakra-ui/react'
-import { useState } from 'react';
-import Header from './Header';
+
 
 
 function Cards( { item } ) {

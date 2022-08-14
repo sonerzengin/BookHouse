@@ -1,12 +1,13 @@
 import React from 'react'
 import '../App.css' ;
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import { Flex, Spacer,Button,ButtonGroup,Box,Image, } from '@chakra-ui/react'
 import {BsBasket} from 'react-icons/bs'
 import { Link } from 'react-router-dom';
 import Top from './Top';
+import Login from './Login';
 
-function Header( { isLoggedIn , username }) {
+function Header( ) {
 
   let navigate = useNavigate(); 
   const routeChange = () =>{ 
@@ -17,8 +18,10 @@ function Header( { isLoggedIn , username }) {
     let path = `../basket`; 
     navigate(path);
   }
+
+
+
   
-  console.log(username)
 
   return (
     <div className='container'>
@@ -38,11 +41,12 @@ function Header( { isLoggedIn , username }) {
           <Spacer />
         <ButtonGroup gap='2'>
           
-         {!isLoggedIn && 
+
+         {
          <Button colorScheme='teal' onClick={routeChange}>Üye Ol / Giriş Yap</Button> 
          }
-          { isLoggedIn &&
-          
+          { 
+
               <Button colorScheme='teal'>Cikis Yap</Button> 
           } 
         
