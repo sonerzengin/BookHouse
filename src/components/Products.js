@@ -2,7 +2,7 @@ import { useState,useEffect } from "react";
 import React from 'react'
 import Cards from "./Cards";
 import { Box, Grid } from '@chakra-ui/react';
-import SearchInput from "./SearchInput";
+
 
 
 function Products() {
@@ -10,7 +10,7 @@ function Products() {
 
     useEffect(()=> {
       fetch(`http://127.0.0.1/kodluyoruz/db.json`)
-      .then(res => res.json()).then(data =>setData(data));
+      .then(res => res.json()).then(data =>setData(data));   
     },[data]);
     
 

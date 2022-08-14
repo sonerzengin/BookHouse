@@ -23,7 +23,7 @@ const SignUp = () => (
         validate={values => {
           const errors = {};
           if (!values.email ) {
-            errors.email = 'E-mail kısmı boş bırakılamaz';
+            errors.email = 'E-posta boş bırakılamaz';    //hata mesajlari
             errors.password = 'Şifre boş bırakılamaz'
           } else if (
             !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
@@ -41,7 +41,7 @@ const SignUp = () => (
             localStorage.setItem('password', values.password);
             setSubmitting(false);
           }, 400);
-          alert('Kayıt Başarılı')
+          alert('Kayıt Başarılı')               //onSubmit ile localStorage'a kayit
         }}
         
       >
@@ -102,8 +102,8 @@ const SignUp = () => (
             
             <br/><br/>
      
-            <Button  colorScheme='teal' type="submit" disabled={isSubmitting}>
-              Üye Ol
+            <Button  colorScheme='teal' type="submit" disabled={isSubmitting}>    
+              Üye Ol 
             </Button>
             <div className="links">
             <Link className="linkkk" to="/">Geri Dön</Link>

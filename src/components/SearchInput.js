@@ -11,7 +11,7 @@ function SearchInput( ) {
   const [data,setData] = useState([]);
 
   const handleChange = (e) => {
-    setQuery(e.target.value);
+    setQuery(e.target.value);      //her karakter girisinde query atama
     
   }
   
@@ -24,7 +24,8 @@ function SearchInput( ) {
 },[query])
 
 
-
+                 // Karakter girildiginde sorgu yapma
+                 // Sorgunun filtrelenip map'lenmesi
  
  
    return (
@@ -33,7 +34,7 @@ function SearchInput( ) {
       <Input placeholder='Kitap adı giriniz...' htmlSize={4} width='40%' onChange={handleChange} variant='filled' mb={5}/>
       </div>
       {query.length > 0 && data.filter(name => name.BookTitle.toLowerCase().includes(query)).map((filteredName,key) => ( 
-        <div key={key}>
+        <div key={key}> 
          <Box>
   
   <Flex className='search__results' border='2px' borderColor='gray.200' justifyContent={'space-between'}>

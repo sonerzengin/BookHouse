@@ -1,4 +1,18 @@
-# Getting Started with Create React App
+# Book House (E-commerce Project with REACTJS)
+
+Kodluyoruz FrontEnd Bootcamp'i final projesi
+
+## Used Technologies
+
+[x] React Query
+[x] React Bootstrap
+[x] Chakra UI
+[x] React Router Dom
+[x] Formik
+[x] Axios
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
