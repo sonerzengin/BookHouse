@@ -6,7 +6,7 @@ import {BsBasket} from 'react-icons/bs'
 import { Link } from 'react-router-dom';
 import Top from './Top';
 
-function Header() {
+function Header( { isLoggedIn , username }) {
 
   let navigate = useNavigate(); 
   const routeChange = () =>{ 
@@ -18,6 +18,7 @@ function Header() {
     navigate(path);
   }
   
+  console.log(username)
 
   return (
     <div className='container'>
@@ -37,7 +38,14 @@ function Header() {
           <Spacer />
         <ButtonGroup gap='2'>
           
-        <Button colorScheme='teal' onClick={routeChange}>Üye Ol / Giriş Yap</Button>
+         {!isLoggedIn && 
+         <Button colorScheme='teal' onClick={routeChange}>Üye Ol / Giriş Yap</Button> 
+         }
+          { isLoggedIn &&
+          
+              <Button colorScheme='teal'>Cikis Yap</Button> 
+          } 
+        
         <Button colorScheme='teal' onClick={routeChange2}>Sepetim <BsBasket className='basket-icon'/> </Button> 
         </ButtonGroup>
       </Flex>

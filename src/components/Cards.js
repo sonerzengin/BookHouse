@@ -13,12 +13,12 @@ function Cards( { item } ) {
   return (
     <div>
       
-    <Container>
+    
       
-        <Card  className='cards'>
+        <Card className='cards'>
         <Link className='routerLink' to={`/products/${item.Id}`}>
           <Card.Img className='cardimage' variant="top" src={item.ImagePath} />
-            <Card.Body className='cardbody' >
+            <Card.Body className='cardbody'>
             <Card.Title className='cardtitle'>{item.BookTitle}</Card.Title>
             <Card.Text>{item.Author}</Card.Text> 
             <Card.Text><b>Fiyat: {item.Price}TL</b></Card.Text>
@@ -29,7 +29,7 @@ function Cards( { item } ) {
       
     
     
-    </Container>
+    
     </div>
   );
 }
