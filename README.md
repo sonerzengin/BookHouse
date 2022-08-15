@@ -38,7 +38,10 @@ It comes a new Quote for every rendered component
 
 # Register Alert
 ![plot](./proje-gorselleri/proje8.jpg)
+<<<<<<< HEAD
 
+=======
+>>>>>>> c82319b9d3fa739acd342b86c9c9fc91b6e0dbba
 
 ## Getting Started with Create React App
 

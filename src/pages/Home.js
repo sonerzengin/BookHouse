@@ -15,7 +15,7 @@ function Home() {
     
 
     
-    <div className='container mt-5'>
+    <div className='container-fluid col-12 mt-5'>
       <div className='row'>
 
       <SearchInput/>

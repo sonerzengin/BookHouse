@@ -17,7 +17,7 @@ function Products() {
   return (
       
       <div className='cards__main'>
-        <Grid templateColumns={{md:'repeat(4, 1fr)',sm:'repeat(1, 1fr)'}} gap={3}>
+        <Grid templateColumns={{md:'repeat(5, 1fr)',sm:'repeat(2, 5fr)'}} gap={5}>
         {
             data.map ((item,key) => (
                 <Box boxShadow='base' transition='all 0.5s ease' borderRadius={5} _hover={{textColor: 'teal',boxShadow:'dark-lg'}} >
