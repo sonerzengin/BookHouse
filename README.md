@@ -14,10 +14,10 @@ Kodluyoruz FrontEnd Bootcamp'i final projesi
 ## Screenshots
 
 # Homepage
-![plot](./proje-gorselleri/proje1.jpg)
+![plot](./proje-gorselleri/proje11.jpg)
 
 # Searching Books
-![plot](./proje-gorselleri/proje2.jpg)
+![plot](./proje-gorselleri/proje21.jpg)
 
 # Quote Of The Day
 It comes a new Quote when the component rerendered
@@ -38,10 +38,13 @@ It comes a new Quote when the component rerendered
 
 # Register Alert
 ![plot](./proje-gorselleri/proje8.jpg)
-<<<<<<< HEAD
 
-=======
->>>>>>> c82319b9d3fa739acd342b86c9c9fc91b6e0dbba
+# Mobil Responsive
+![plot](./proje-gorselleri/mobil1.jpg)
+
+# Mobil Responsive 2
+![plot](./proje-gorselleri/mobil2.jpg)
+
 
 ## Getting Started with Create React App
 
