@@ -20,7 +20,7 @@ Kodluyoruz FrontEnd Bootcamp'i final projesi
 ![plot](./proje-gorselleri/proje2.jpg)
 
 # Quote Of The Day
-It comes a new Quote for every rendered component
+It comes a new Quote when the component rerendered
 ![plot](./proje-gorselleri/proje3.jpg)
 
 # SignUp Page
