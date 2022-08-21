@@ -1,9 +1,15 @@
 # Book House (E-commerce Project with REACTJS)
 
-Kodluyoruz FrontEnd Bootcamp'i final projesi
+Kodluyoruz FrontEnd Bootcamp'i final projesi.
+## Pay Attention
+* Canlı demoya tıklamadan önce Moesif CORS eklentisini kurmanız gereklidir.Aşağıdaki linkten kurabilirsiniz.
+* Before you click Live Demo,you need to add an extension which is called Moesif CORS.Links in below.
+* Moesif CORS Link: https://chrome.google.com/webstore/detail/moesif-origin-cors-change/digfbfaphojjndkpccljibejjbppifbc
+* Live Demo: https://book-house.vercel.app/
+
 
 ## Used Technologies
-
+* Context API
 * React Query
 * React Bootstrap
 * Chakra UI
