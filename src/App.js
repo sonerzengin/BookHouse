@@ -4,6 +4,7 @@ import Login from './components/Login';
 import {Routes,Route,Link} from "react-router-dom";
 import Home from './pages/Home'
 import About from './pages/About'
+import Basket from './pages/Basket'
 import Products from './components/Products';
 import ProductDetails from './components/ProductDetails';
 import QuoteOfTheDay from './pages/QuoteOfTheDay';
@@ -13,9 +14,6 @@ function App() {
   return (
     <div className='App' >
 
-    
-      
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -24,7 +22,7 @@ function App() {
         <Route path="/products" element={<Products />} />
         <Route path="/products/:Id" element={<ProductDetails />} />
         <Route path="/gununsozu" element={<QuoteOfTheDay />} />
-
+        <Route path="/basket" element={<Basket />} />
       </Routes>
       
     </div>

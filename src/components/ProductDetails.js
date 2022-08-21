@@ -1,32 +1,33 @@
 
-import React from 'react'
+import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { useState,useEffect } from "react";
 import { Button } from '@chakra-ui/react';
 import { Container,Col,Row } from 'react-bootstrap';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import BasketContext from '../context/BasketContext';
 
 
 
 function ProductDetails() {
   
-  const [count,setCount] = useState(0)
+  const basket = useContext(BasketContext);
   
-  useEffect(()=>(
-  console.log(count)
-  ),[count])
+  
 
   
+ 
 
   const [data,setData] = useState([]);
 
   useEffect(()=> {
-    fetch(`http://127.0.0.1/kodluyoruz/db/${Id}.json`)
+    fetch(`https://dewbysbg.com.tr/schemas/db/${Id}.json`)
     .then(res => res.json()).then(data =>setData(data));
   },[data]);
 
     const {Id} = useParams();
+
 
   return (
     
@@ -54,7 +55,10 @@ function ProductDetails() {
             </div>
             <div className='productDetails__group2'>
             <p className='productDetails__productPrice'>Fiyat : {data.Price}</p>
-            <Button  onClick={() => setCount(count + 1)} colorScheme='teal' size='lg' px='10' >Sepete Ekle</Button>
+
+            <Button onClick={() => basket.addBasket(data)} colorScheme='teal' size='lg' px='10' >
+              Sepete Ekle
+            </Button>
            
             </div>
             
@@ -70,6 +74,7 @@ function ProductDetails() {
     </Container>
     
   )
+  
 }
 
 export default ProductDetails

@@ -15,12 +15,24 @@
   font-size: 18px;
   transition: all 0.5s ease-in-out;
   
-  margin-left: 40px !important;
+  
 }
 .header__links:hover{
   font-size: 19px;
   color: teal;
   text-decoration: none;
+}
+.header__username{
+  color: teal;
+ 
+  font-weight: 600;
+  padding-right: 20px;
+
+}
+.whenLoggedIn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .signup{
   background-color: teal;
@@ -260,4 +272,51 @@ text-align: center;
   color: antiquewhite;
   padding: 7px 30px 0 30px;
   
+}
+.basket__products {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+  border: 1px solid teal;
+  height: 120px;
+  align-items: center;
+  background-color: rgb(2, 214, 214, 0.2);
+  border-radius: 5px;
+  margin-top:10px;
+  padding: 0px 10px;
+}
+.basket__products div {
+  width:200px ;
+  text-align: center;
+  border-radius: 3px;
+}
+.basket__rows {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.paymentBox {
+  display: flex;
+  height: 300px;
+  background-color: rgb(2, 214, 214, 0.2);
+  border-radius: 5px;
+  align-items: center;
+  padding: 10px 15px;
+  flex-direction: column;
+  font-weight: 600;
+}
+.paymentBox input {
+  
+  background: #fff;
+}
+.payment__button {
+  margin-top: 10px;
+  width: 50%;
+  
+}
+.totalPrice {
+  font-size: 24px;
+  padding: 0 12px;
+  font-weight: 600;
 }
