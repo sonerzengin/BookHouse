@@ -17,7 +17,7 @@ function SearchInput( ) {
   
   useEffect(()=>{
     const fetchBooks = async () => {
-      const res = await axios.get('http://127.0.0.1/kodluyoruz/db.json')
+      const res = await axios.get('https://dewbysbg.com.tr/schemas/db.json')
       setData(res.data)
     }
     fetchBooks()
@@ -37,7 +37,7 @@ function SearchInput( ) {
         <div key={key}> 
          <Box>
   
-  <Flex className='search__results' fontSize={{sm:12,md:17}} border='2px' borderColor='gray.200' justifyContent={'space-between'}>
+  <Flex className='search__results' fontSize={{sm:12,md:17}} border='2px' mx={{md:40,sm:"none"}}  borderColor='gray.200' justifyContent={'space-between'}>
     <Box pt={2}  w='300px' h='10'>{filteredName.BookTitle}</Box>
     
     <Box pt={2} w='300px' h='10'>{filteredName.Author}</Box>

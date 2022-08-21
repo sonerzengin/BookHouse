@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Formik } from "formik";
 import { Button} from "@chakra-ui/react";
 import { useNavigate } from 'react-router-dom';
 import Header from './Header';
 import { useState } from "react";
+import UserContext from '../context/UserContext';
+
+
 
 function Login() {
+  const data = useContext(UserContext)
   
-    
+
+
   
 
   let navigate = useNavigate(); 
@@ -45,13 +50,12 @@ function Login() {
 
             if( x === values.email &&  y === values.password )
              {
+                data.setLoggedIn('true') ;
                 alert('Giriş Başarılı')
                 routeChange();
-                
-
-                
              } else {
               alert ('Hatalı E-posta ya da şifre.Yeniden Deneyin')
+              
              }
              
             setSubmitting(false);

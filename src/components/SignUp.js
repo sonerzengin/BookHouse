@@ -1,23 +1,32 @@
 import React from "react";
 import { Formik } from "formik";
-import { Button } from "@chakra-ui/react";
+import { Link as ReachLink } from "react-router-dom"
 import { Link } from "react-router-dom"
-import useNavigate from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
+import { Button, ButtonGroup} from '@chakra-ui/react';
 
 
+function SignUp()  { 
 
-const SignUp = () => (
 
-
-  
+  let navigate = useNavigate(); 
+  const routeChange = () =>{ 
+    let path = `/login`; 
+    navigate(path);
+  }
   
  
    
 
 
-  
-    <div className="login-page">
-       
+  return (
+
+    <div >
+        <ButtonGroup display={'flex'} justifyContent={'space-between'} my={50} px={10}>
+            <Link as={ReachLink} to='/'><i class="fa-solid fa-arrow-left"></i>&#160;Geri Dön</Link>
+            <Link as={ReachLink} to='/login'>Giriş Yap&#160;<i class="fa-solid fa-arrow-right"></i></Link>
+       </ButtonGroup>
+     <div  className="login-page">
       <Formik
         initialValues={{username: '',email: '', password: ''}}
         validate={values => {
@@ -41,7 +50,8 @@ const SignUp = () => (
             localStorage.setItem('password', values.password);
             setSubmitting(false);
           }, 400);
-          alert('Kayıt Başarılı')               //onSubmit ile localStorage'a kayit
+          alert('Kayıt Başarılı.Giriş yapabilirsiniz')               //onSubmit ile localStorage'a kayit
+          routeChange();
         }}
         
       >
@@ -102,17 +112,15 @@ const SignUp = () => (
             
             <br/><br/>
      
-            <Button  colorScheme='teal' type="submit" disabled={isSubmitting}>    
+            <Button  colorScheme='teal' type="submit" disabled={isSubmitting} >    
               Üye Ol 
             </Button>
-            <div className="links">
-            <Link className="linkkk" to="/">Geri Dön</Link>
-            <Link className="linkkk" to="/login">Giriş Yap</Link>
-            </div>
+            
           </form>
         )}
       </Formik>
+      </div> 
     </div>
-);
+       ) };
   
   export default SignUp;

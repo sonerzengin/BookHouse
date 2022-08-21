@@ -9,7 +9,7 @@ function Products() {
     const [data,setData] = useState([]);
 
     useEffect(()=> {
-      fetch(`http://127.0.0.1/kodluyoruz/db.json`)
+      fetch(`https://dewbysbg.com.tr/schemas/db.json`)
       .then(res => res.json()).then(data =>setData(data));   
     },[data]);
     
