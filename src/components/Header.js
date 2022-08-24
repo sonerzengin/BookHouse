@@ -43,10 +43,10 @@ function Header( ) {
     <div className='container'>
        <Top />
 
-        <Flex minWidth='max-content' alignItems='center' justifyContent='space-evenly' gap='10' flexDirection={{md:'row',sm:'column'}}  mt={2}>
+        <Flex maxWidth='full' alignItems='center' justifyContent='space-evenly' gap='10' flexDirection={{base:'column',md:'row',sm:'column'}}  mt={2}>
           <Box p='2'>
           <Link to={'/'}>
-          <Image  w={{sm:'100%' , md:'50%'}} src="https://i.pinimg.com/originals/8c/64/69/8c64695ea89ddb51f9b53fa9dfe315e3.png" alt="logo" className='logo' />
+          <Image  w={{base:'100%',sm:'100%' , md:'50%'}} src="https://i.pinimg.com/originals/8c/64/69/8c64695ea89ddb51f9b53fa9dfe315e3.png" alt="logo" className='logo' />
           </Link>
           </Box>
           

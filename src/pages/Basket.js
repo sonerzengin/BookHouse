@@ -23,7 +23,7 @@ function Basket() {
             <Link>Ödeme Yap&#160;<i class="fa-solid fa-arrow-right"></i></Link>
        </ButtonGroup>
        <Row>
-       <Col  xs={8}>
+       <Col xs={12} md={8}>
       {basket.addBook.length === 0 ? <div>Sepette ürün yok</div> :
       
         basket.addBook.map ((data , key) =>(

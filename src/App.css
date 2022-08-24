@@ -148,10 +148,14 @@ text-align: center;
 .cardimage{
   height: 320px;
   transition: all 0.5s ease-in-out;
-  
-  
-  
+  padding: 5px 22px;
 }
+@media screen and (max-width: 465px){
+.cardimage {
+  height: 450px !important;
+}
+}
+
 .cards:hover .cardimage {
   transform: scale(1.05,1.05);
   
@@ -159,7 +163,13 @@ text-align: center;
 .cardtitle{
     font-weight: 800 !important;
     transition: all 0.5s ease;
+    line-height: 22px !important;
 
+}
+@media screen and (max-width: 768px){
+  .cardtitle{
+    line-height: 20px !important;
+  }
 }
 
 .cardbody {
@@ -248,6 +258,12 @@ text-align: center;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   margin-top: 20px;
   border-radius: 5px;
+}
+@media screen and (max-width: 768px){
+  .quoteOfTheDay {
+    margin: 50px 0 !important;
+  }
+  
 }
 
 .blockquote__text {
