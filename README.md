@@ -36,7 +36,7 @@ It comes a new Quote when the component rerendered
 # Book Details
 ![plot](./proje-gorselleri/proje5.jpg)
 
-# Required Zones
+# Required Fields
 ![plot](./proje-gorselleri/proje6.jpg)
 
 # Books on Hover
